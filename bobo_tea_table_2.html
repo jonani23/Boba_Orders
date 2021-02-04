@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+   table, th, td {border: 3px solid rgb(206, 12, 12); 
+     }
+   table {
+      font-family: 'Lucida Sans', sans-serif;    
+    border-collapse: collapse ; 
+    width: 100%;
+    text-align:center  
+    }
+    th, td {
+        padding: 15px;
+     }
+    #t01 {
+         width: 100%;
+         background-color: #8fe3ee;
+     }
+     #t02 {
+         width: 100%;
+         background-color: #d3d8a8;
+     }
+ 
+</style>   
+</head>
+<body>
+    <body style="background-color:#f1e8e8ee;"></body>
+    <center><h1><font font face="perpetua" size="10">Table with Boba Orders</font></h1></center>
+<table class="center">
+    <tr id="t01">
+        <th>Drink Name</th>
+        <th>Size</th>
+        <th>Ice Level</th>
+        <th>Sugar level</th>
+        <th>Topping</th>
+    </tr>   
+   <tr>
+        <td><span title="Interesting choice">Ooling Milk Tea</span></td>
+        <td>M</td>
+        <td>50%</td>
+        <td>25%</td>
+        <td>Boba Original</td>
+    </tr>
+    <tr id="t02">
+        <td>Jasmine</td>
+        <td>L</td>
+        <td>25%</td>
+        <td>25%</td>
+        <td>Lychee Jelly</td>
+    </tr>
+    <tr>
+        <td>Mango Smoothie</td>
+        <td>L</td>
+        <td>0%</td>
+        <td>0%</td>
+        <td>Mango Star Jelly</td>
+</tr>
+</table>
+
+<form action="/action_page.php" method="get">
+    
+    <fieldset>
+        <legend><strong><font font face="perpetua" size="6">Add A Drink</font></strong></legend>
+
+    <div>
+        <label for="Drink"><font font face="arial" size="3">Drink</font></label>
+                <select name="dropdown">
+                    <option value="Ooling milk Tea" selected>Ooling Milk Tea</option>
+                    <option value="Jasmine" selected>Jasmine</option>
+                    <option value="Mango Smoothie" selected>Mango Smoothie</option>
+                </select>
+    </div>
+</br>
+</br>
+    <div>
+        <p><font font face="arial" size="3">Size</font></p>
+        <input type="radio" id="small" name="size" value="small">
+        <label for="large">Small</label>
+        <input type="radio" id="medium" name="size" value="medium">
+        <label for="medium">Medium</label>
+        <input type="radio" id="large" name="size" value="Large">
+        <label for="large">Large</label>  
+    </div>
+</br>  
+</br>
+    <div>
+        <label for="ice"><font font face="arial" size="3">Ice Level</font></label>
+        <select name="ice" id="ice">
+            <option value="100" selected>100%</option>
+            <option value="75" selected>75%</option>
+            <option value="50" selected>50%</option>
+            <option value="25" selected>25%</option>
+            <option value="0" selected>0%</option>
+        </select>
+    </div>
+</br>  
+</br>
+   <div>
+        <label for="sugar"><font font face="arial" size="3">Sugar Level</font></label>
+        <select name="ice" id="ice">
+            <option value="100" selected>100%</option>
+            <option value="75" selected>75%</option>
+            <option value="50" selected>50%</option>
+            <option value="25" selected>25%</option>
+            <option value="0" selected>0%</option>
+        </select>
+    </div>    
+</br>
+</br>
+    <div>
+        <p><font font face="arial" size="3">Topping(s)</font></p>
+        <input type="checkbox" id="boba" name="topping" value="boba">
+        <label for="boba">Boba Original</label>
+    </div>  
+    <div>
+        <input type="checkbox" id="lychee" name="topping" value="lychee">
+        <label for="boba">Lychee</label>
+    </div> 
+    <div>
+        <input type="checkbox" id="Mango" name="topping" value="Mango">
+        <label for="boba">Boba Original</label>
+    </div> 
+    
+    </form>
+    </fieldset>
+</br>
+    
+    <h4><font font face="perpetua" size="5">All finished?</font></h4> 
+    <p><font font face="arial" size="4">Thank you!</font></p>
+    <button type="submit" formaction="https://www.w3schools.com/action_page.php">Place Order</button>      
+</form>
+
+</body>
+</html> 
